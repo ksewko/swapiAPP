@@ -1,0 +1,17 @@
+$mainColor: rgb(255, 196, 0);
+$secondColor: black;
+$textColor: white;
+
+@mixin yellow-btn {
+  button {
+    background-color: $mainColor;
+    transition: 0.3s;
+    color: $secondColor;
+
+    &:hover {
+      background-color: $secondColor;
+      color: $mainColor;
+      border: 2px solid $mainColor;
+    }
+  }
+}

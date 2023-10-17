@@ -1,0 +1,18 @@
+<div class="overlay" *ngIf="inProgress"></div>
+<div class="home-page">
+  <mat-spinner *ngIf="inProgress; else swLogo" color="accent"></mat-spinner>
+  <ng-template #swLogo>
+    <img [src]="logoPath" alt="Star Wars Logo" />
+  </ng-template>
+
+  <app-battle-field
+    *ngIf="isCategoryChoosed; else categoryView"
+    [categoryName]="selectedCategoryName"
+    [idsArray]="idsArray"
+    (exitClicked)="onExitClicked()"
+  />
+  <ng-template #categoryView
+    ><app-category-view (selectCategory)="onPrepareDataSet($event)"
+  /></ng-template>
+</div>
+

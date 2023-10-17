@@ -1,0 +1,20 @@
+<div class="battle-field">
+  <div class="player" *ngIf="isGameStarted">
+    <span>{{ player1Fighter.name }}</span>
+    <span>{{ player1Fighter.superPower }}</span>
+  </div>
+  <div class="action">
+    <app-score-board />
+    <span>Welcome to {{ categoryName }} Star Wars battle!</span>
+    <button mat-raised-button (click)="onDrawClick()">
+      Draw your Fighters
+    </button>
+    <button mat-raised-button color="primary" (click)="onExit()">
+      Go back to Categories
+    </button>
+  </div>
+  <div class="player" *ngIf="isGameStarted">
+    <span>{{ player2Fighter.name }}</span>
+    <span>{{ player2Fighter.superPower }}</span>
+  </div>
+</div>

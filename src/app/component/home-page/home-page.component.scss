@@ -1,0 +1,47 @@
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(19, 9, 36, 0.651);
+  z-index: 10;
+}
+
+.home-page {
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  background: no-repeat url("../../../assets/pictures/starsBg.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  app-battle-field,
+  app-category-view {
+    width: 90%;
+    margin-top: 24px;
+  }
+
+  img {
+    width: 75%;
+  }
+}
+
+@media (min-width: 576px) {
+  .home-page {
+    app-battle-field,
+    app-category-view {
+      width: 75%;
+      margin-top: 32px;
+    }
+
+    img {
+      width: 25%;
+    }
+  }
+}

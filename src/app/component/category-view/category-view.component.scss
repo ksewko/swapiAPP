@@ -1,0 +1,43 @@
+@import "theme.scss";
+
+.category-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  mat-card {
+    width: 100%;
+    mat-card-header {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+    mat-card-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include yellow-btn;
+
+      mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .category-view {
+    mat-card {
+      width: 75%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .category-view {
+    mat-card {
+      width: 33.3%;
+    }
+  }
+}

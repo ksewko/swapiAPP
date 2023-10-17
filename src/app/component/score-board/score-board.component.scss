@@ -1,0 +1,25 @@
+@import "theme.scss";
+
+.score-board {
+  mat-card {
+    mat-card-content {
+      padding: 0 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 82px;
+
+      span {
+        font-size: 48px;
+        font-weight: 600;
+        padding: 0 12px;
+      }
+      span:first-of-type {
+        color: $mainColor;
+      }
+      span:last-of-type {
+        color: $secondColor;
+      }
+    }
+  }
+}
