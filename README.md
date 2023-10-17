@@ -28,16 +28,19 @@ to open app in local environment.
 ## Testing
 Cypress was used for e2e testing.
 
-So to run them properly make sure to firstly open app in you localhost.
+So to run them properly make sure to firstly open app in your localhost.
+```bash
+ng serve
+```
 
 Base url is set to '**http://localhost:4200**', so if you are using different port for ng serve purpose please change base url in "**cypress.config.ts**' file.
 
-After setting up everyting please run:
+After setting up everything please run:
 ```bash
 npm run cypress:open
 ```
 
-After running this command the Cypress console should appear.
+After running this command the Cypress app should appear.
 
 Choose E2E Testing (Configure if needed) and prefered browser (ex. Chrome) and  press "**Start testing E2E...**" button.
 
